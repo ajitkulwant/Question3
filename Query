@@ -1,5 +1,5 @@
-select dept.deptName,
-   count(emp.empid) as numb_of_emps
-   from department dept inner join employee emp
-   on dept.deptid = emp.deptid
-   group by dept.deptid
+select dept.Dname,
+   count(emp.EmpNo) as NUMBER OF EMPLOYEE
+   from Department dept inner join Employee emp
+   on dept.DeptNo = emp.DeptNo
+   group by dept.DeptNo
